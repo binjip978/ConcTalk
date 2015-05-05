@@ -1,5 +1,4 @@
 import rx.lang.scala._
-import Stuff.log
 
 object Slide5 {
   def run: Unit = {
@@ -13,7 +12,7 @@ object Slide5 {
       Subscription
     }
 
-    vms.subscribe(str => log(str))
+    vms.subscribe(str => println(str))
   }
 
 }

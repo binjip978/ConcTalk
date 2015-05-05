@@ -2,7 +2,6 @@ import rx.lang.scala._
 import scala.concurrent._
 import ExecutionContext.Implicits.global
 import scala.util.{Success, Failure}
-import Stuff.log
 
 object Slide6 {
   def run {
@@ -22,7 +21,7 @@ object Slide6 {
       Subscription
     }
 
-    observable.subscribe(str => log(str))
+    observable.subscribe(str => println(str))
     Thread.sleep(2000)
   }
 }
