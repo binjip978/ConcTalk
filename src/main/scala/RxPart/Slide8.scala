@@ -1,4 +1,7 @@
+package RxPart
+
 import rx.lang.scala._
+
 import scala.concurrent.duration._
 
 object Slide8 {

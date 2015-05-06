@@ -1,8 +1,11 @@
+package RxPart
+
 import rx.lang.scala._
-import scala.concurrent.{Future, blocking}
-import scala.concurrent.duration._
-import scala.io.Source
+
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration._
+import scala.concurrent.{Future, blocking}
+import scala.io.Source
 
 object Slide9 {
   def run: Unit ={

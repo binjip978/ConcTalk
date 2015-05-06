@@ -1,6 +1,5 @@
-
-object RxTalk extends App {
-  Slide11.run
+object Main extends App {
+  FuturePart.Slide2.run
 
   // every Observable[T] object can be in 3 state:
   //   uncompleted (he can emit value of type T)

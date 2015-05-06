@@ -1,3 +1,5 @@
+package RxPart
+
 import rx.lang.scala._
 
 

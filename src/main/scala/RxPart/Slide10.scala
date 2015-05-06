@@ -1,4 +1,7 @@
+package RxPart
+
 import rx.lang.scala._
+
 import scala.io.Source
 
 object Slide10 {

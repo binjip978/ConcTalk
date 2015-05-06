@@ -1,7 +1,10 @@
+package RxPart
+
 import rx.lang.scala._
+
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent._
-import ExecutionContext.Implicits.global
-import scala.util.{Success, Failure}
+import scala.util.{Failure, Success}
 
 object Slide6 {
   def run {

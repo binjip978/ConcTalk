@@ -1,5 +1,7 @@
-import rx.lang.scala._
+package RxPart
+
 import org.apache.commons.io.monitor._
+import rx.lang.scala._
 
 object Slide7 {
   def run: Unit = {
