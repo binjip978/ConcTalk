@@ -2,7 +2,7 @@ package FP101
 
 import scala.util.{Try, Success, Failure}
 
-object Slide4 {
+object Slide5 {
   def run: Unit = {
     case class Money(amount: Int)
     case class Book(title: String)
@@ -17,14 +17,9 @@ object Slide4 {
       Try(Book("Functional Programming in Scala"))
     }
 
-    withdrawMoney("user1", "password2", 100) match {
-      case Success(cash) => {
-        buyBook("Functional Programming in Scala", cash) match {
-          case Success(book) => println(book)
-          case Failure(e)    => println(s"Error occurred: $e")
-        }
-      }
-      case Failure(e)    => println(s"Error occurred: $e")
-    }
+    for {
+      cash <- withdrawMoney("user1", "password2", 100)
+      book <- buyBook("Functional Programming in Scala", cash)
+    } println(book)
   }
 }

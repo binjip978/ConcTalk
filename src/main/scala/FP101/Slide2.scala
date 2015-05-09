@@ -2,13 +2,10 @@ package FP101
 
 object Slide2 {
   def run: Unit = {
+    trait Try[+T]
+    case class Success[+T](value: T) extends Try[T]
+    case class Failure(e: Throwable) extends Try[Nothing]
 
-    // simplictic
-
-//    trait Try[T]
-//    case class Success[T](value: T) extends Try[T]
-//    case class Failure(e: Throwable) extends Try[Nothing]
-//
 //    val success = Success(100)
 //
 //    success match {
